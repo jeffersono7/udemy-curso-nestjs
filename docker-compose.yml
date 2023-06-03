@@ -1,0 +1,19 @@
+version: '3'
+
+networks:
+  database:
+    driver: bridge
+
+services:
+  mysql:
+    image: bitnami/mysql:latest
+    container_name: mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      MYSQL_DATABASE: curso
+      MYSQL_ROOT_PASSWORD: mysql123123
+    networks:
+      - database
