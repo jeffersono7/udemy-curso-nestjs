@@ -13,7 +13,7 @@ services:
     environment:
       MYSQL_USER: mysql
       MYSQL_PASSWORD: mysql
-      MYSQL_DATABASE: curso
+      MYSQL_DATABASE: api
       MYSQL_ROOT_PASSWORD: mysql123123
     networks:
       - database
